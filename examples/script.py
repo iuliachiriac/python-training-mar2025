@@ -17,3 +17,7 @@ print(message)
 
 message = f"{name} walked {distance:.2f}km."
 print(message)
+
+greeting = input("Hello!\n")
+print(greeting)
+print(len(greeting))
