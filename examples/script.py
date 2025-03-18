@@ -21,3 +21,13 @@ print(message)
 greeting = input("Hello!\n")
 print(greeting)
 print(len(greeting))
+
+long_line = "For multiples of three print Fizz instead of the number and for "\
+            "the multiples of five print Buzz instead of the n"
+
+long_line = ("For multiples of three print Fizz instead of the number and for "
+             "the multiples of five print Buzz instead of the n")
+
+if (greeting and len(greeting) > 10 and ("m" in greeting or "s" in greeting)
+        and "!" in greeting):
+    print("ok")
