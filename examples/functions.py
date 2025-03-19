@@ -4,10 +4,12 @@ def func1():
 
 
 # type hints
-def prod(x: str, y: int):
+def prod(x: str, y: int = None):
     print(x * y)
 
 
-help(func1)
-prod("hello", 3)
-prod(5.3, 3)
+# print(__name__)
+if __name__ == "__main__":
+    help(func1)
+    prod("hello", 3)
+    prod(5.3, 3)
