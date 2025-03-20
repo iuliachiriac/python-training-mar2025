@@ -7,4 +7,3 @@ with open("imports.py", "r") as f:
             print(line.strip())
 
 print("after `with` block, file is closed:", f.closed)
-
