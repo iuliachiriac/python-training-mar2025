@@ -1,0 +1,4 @@
+[oracle]
+user=your_username
+password=your_password
+dsn=hostname:port/service_name
