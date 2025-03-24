@@ -1,3 +1,7 @@
+class InsufficientFundsError(Exception):
+    pass
+
+
 class BankAccount:
     def __init__(self, bank_name, balance=0):
         self.bank_name = bank_name
@@ -8,7 +12,7 @@ class BankAccount:
 
     def withdraw(self, amount):
         if amount > self.balance:
-            raise ValueError("Insufficient funds.")
+            raise InsufficientFundsError("Insufficient funds.")
         self.balance -= amount
 
 
@@ -21,5 +25,5 @@ if __name__ == "__main__":
     my_friends_account = BankAccount("ImaginaryBank")
     try:
         my_friends_account.withdraw(100)
-    except ValueError as ex:
+    except InsufficientFundsError as ex:
         print(ex)
